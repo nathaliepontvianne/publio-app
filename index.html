@@ -48,7 +48,7 @@ section{padding:96px 0}
 header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:12px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.45rem;letter-spacing:-.02em}
-.brand img{height:36px;width:auto}
+.brand img{height:54px;width:auto}
 footer .brand img{height:42px}
 .menu{display:flex;gap:30px;font-size:.95rem;font-weight:500;color:var(--muted)}
 .menu a:hover{color:var(--night)}
@@ -143,6 +143,9 @@ radial-gradient(50% 50% at 8% 30%,rgba(59,130,246,.13),transparent 70%),#fff;ove
 .plan{position:relative;border:2px solid transparent;border-radius:28px;padding:42px 34px 34px;background:linear-gradient(#fff,#fff) padding-box,var(--grad-diag) border-box;box-shadow:0 30px 60px -38px rgba(139,92,246,.5);display:flex;flex-direction:column}
 .plan .badge{position:absolute;top:-15px;left:30px;background:var(--grad);color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.04em;padding:7px 16px;border-radius:999px}
 .plan h3{font-size:1.5rem;font-weight:800;letter-spacing:-.01em}
+.plan .plan-name{display:flex;align-items:center;gap:14px}
+.plan-name img{height:60px;width:auto}
+.plan-name span{font-size:1.7rem;font-weight:800;letter-spacing:.06em}
 .plan .who{color:var(--muted);font-size:.95rem;margin:6px 0 22px}
 .plan .amount{font-family:'Poppins',sans-serif;font-weight:800;font-size:3rem;color:var(--night);line-height:1;letter-spacing:-.03em}
 .plan .amount small{font-size:1rem;font-weight:500;color:var(--muted);letter-spacing:0}
@@ -204,7 +207,7 @@ section{padding:60px 0}
 .topbar a{display:none}
 .nav .wrap{height:60px}
 .brand{font-size:1.3rem}
-.brand img{height:30px}
+.brand img{height:46px}
 footer .brand img{height:36px}
 .burger{display:block}
 .menu{display:none}
@@ -236,6 +239,7 @@ footer .brand img{height:36px}
 .price-grid{gap:30px}
 .plan{padding:40px 22px 26px}
 .plan .amount{font-size:2.6rem}
+.plan-name img{height:52px}
 .quote{flex-direction:column;align-items:stretch;text-align:center;padding:20px}
 .quote .btn{width:100%}
 .callout{padding:18px}
@@ -255,7 +259,7 @@ body{padding-bottom:0}
 }
 @media (max-width:380px){
 .hero h1{font-size:2.1rem}
-.brand img{height:26px}
+.brand img{height:42px}
 .nav .btn{padding:9px 14px}
 .plan .amount{font-size:2.3rem}
 }
@@ -266,7 +270,7 @@ body{padding-bottom:0}
 <div class="topbar"><strong>30 jours d'essai gratuit</strong> pour découvrir PUBLIO<a href="#tarifs">Voir les tarifs →</a></div>
 <header class="nav">
 <div class="wrap">
-<a href="#top" class="brand" aria-label="PUBLIO, retour en haut de page"><img src="logo-full.webp" alt="PUBLIO" width="164" height="36"></a>
+<a href="#top" class="brand" aria-label="PUBLIO, retour en haut de page"><img src="logo-stack.webp" alt="PUBLIO" width="74" height="54"></a>
 <nav class="menu" id="menu" aria-label="Navigation principale">
 <a href="#fonctionnalites">Fonctionnalités</a>
 <a href="#comment">Comment ça marche</a>
@@ -464,7 +468,7 @@ body{padding-bottom:0}
 <div class="price-grid">
 <article class="plan">
 <span class="badge">1 marque</span>
-<h3>PUBLIO SOLO</h3>
+<h3 class="plan-name"><img src="logo-stack.webp" alt="PUBLIO" width="82" height="60"><span>SOLO</span></h3>
 <p class="who">Pour une seule marque.</p>
 <div class="amount">9,90&nbsp;€ <small>/ mois</small></div>
 <p class="yearly">ou <b>99&nbsp;€ / an</b> · environ 2 mois offerts</p>
@@ -481,7 +485,7 @@ body{padding-bottom:0}
 </article>
 <article class="plan">
 <span class="badge">2 à 5 marques</span>
-<h3>PUBLIO MULTI</h3>
+<h3 class="plan-name"><img src="logo-stack.webp" alt="PUBLIO" width="82" height="60"><span>MULTI</span></h3>
 <p class="who">Pour gérer plusieurs marques ou établissements.</p>
 <div class="amount">19,90&nbsp;€ <small>/ mois</small></div>
 <p class="yearly">ou <b>199&nbsp;€ / an</b> · environ 2 mois offerts</p>
@@ -497,9 +501,8 @@ body{padding-bottom:0}
 </div>
 <p class="price-note"><b>Pas de crédits à acheter.</b> Vous pouvez passer de SOLO à MULTI à tout moment pour ajouter des marques, jusqu'à 5.</p>
 <div class="quote">
-<p>Plus de 5 marques ?<span>Nous contacter pour un devis sur mesure.</span></p>
-<!-- TODO : remplacer href="#" par l'adresse e-mail ou le formulaire de contact pour les devis -->
-<a href="#" class="btn btn-ghost">Nous contacter</a>
+<p>Plus de 5 marques ?<span>Nous contacter pour un devis sur mesure : <a href="mailto:publio.app@icloud.com" style="text-decoration:underline">publio.app@icloud.com</a></span></p>
+<a href="mailto:publio.app@icloud.com?subject=Demande%20de%20devis%20PUBLIO%20-%20plus%20de%205%20marques" class="btn btn-ghost">Nous contacter</a>
 </div>
 </div>
 </section>
@@ -551,7 +554,7 @@ body{padding-bottom:0}
 </details>
 <details>
 <summary>Puis-je gérer plusieurs marques ?</summary>
-<p>Oui. La formule PUBLIO MULTI permet de gérer de 2 à 5 marques, chacune avec son propre profil business, ses réseaux et son historique. PUBLIO SOLO est conçue pour une seule marque. Au-delà de 5 marques, contactez-nous pour un devis.</p>
+<p>Oui. La formule PUBLIO MULTI permet de gérer de 2 à 5 marques, chacune avec son propre profil business, ses réseaux et son historique. PUBLIO SOLO est conçue pour une seule marque. Au-delà de 5 marques, contactez-nous à publio.app@icloud.com pour un devis.</p>
 </details>
 <details>
 <summary>Comment fonctionne l'essai gratuit ?</summary>
@@ -579,6 +582,7 @@ body{padding-bottom:0}
 <a href="#tarifs">Tarifs</a>
 <a href="#faq">FAQ</a>
 <a href="#telecharger">Télécharger</a>
+<a href="mailto:publio.app@icloud.com">Contact</a>
 </nav>
 </div>
 <div class="bottom">

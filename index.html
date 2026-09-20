@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PUBLIO – Créez, programmez, rayonnez | Vos réseaux, sans effort</title>
-<meta name="description" content="PUBLIO est l'application mobile de création automatisée de publications Facebook, Instagram et LinkedIn : 3 questions, 2 à 3 variantes par réseau, prêtes à publier. 30 jours d'essai gratuit.">
+<meta name="description" content="PUBLIO est l'application mobile de création automatisée de publications Facebook, Instagram et LinkedIn : 3 questions, 2 à 3 variantes par réseau, prêtes à publier. Bientôt sur iPhone, 30 jours d'essai gratuit au lancement.">
 <meta property="og:title" content="PUBLIO – Vos réseaux, sans effort">
-<meta property="og:description" content="Créez instantanément des publications adaptées à Facebook, Instagram et LinkedIn, directement depuis votre smartphone. 30 jours d'essai gratuit.">
+<meta property="og:description" content="Créez instantanément des publications adaptées à Facebook, Instagram et LinkedIn, directement depuis votre smartphone. Bientôt sur iPhone, 30 jours d'essai gratuit au lancement.">
 <meta name="theme-color" content="#0F172A">
 <link rel="icon" type="image/webp" href="logo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,6 +86,9 @@ radial-gradient(50% 50% at 8% 30%,rgba(59,130,246,.13),transparent 70%),#fff;ove
 .free strong{display:block;font-family:'Poppins',sans-serif;font-size:1.08rem;color:var(--night);line-height:1.2}
 .free small{display:block;color:var(--muted);font-size:.85rem;line-height:1.35;margin-top:2px}
 .hero .note{margin-top:14px;font-size:.88rem;color:var(--muted)}
+.store.soon{cursor:default}
+.store.soon:hover{transform:none;box-shadow:none}
+.stores .btn{min-height:56px;padding:0 28px}
 .phone-stage{position:relative;display:flex;justify-content:center}
 .phone-stage::before{content:"";position:absolute;inset:8% 6%;background:var(--grad-diag);filter:blur(60px);opacity:.28;border-radius:50%}
 .phone{position:relative;width:300px;max-width:100%;background:var(--night);border-radius:44px;padding:12px;box-shadow:0 40px 80px -30px rgba(15,23,42,.55)}
@@ -222,6 +225,7 @@ footer .brand img{height:36px}
 .triptych{font-size:.74rem;letter-spacing:.12em;margin-bottom:24px}
 .stores{flex-direction:column}
 .store{width:100%;justify-content:center}
+.stores .btn{width:100%}
 .free{display:flex;width:100%;margin-top:16px}
 .phone{width:min(300px,100%)}
 .screen{min-height:0}
@@ -267,7 +271,7 @@ body{padding-bottom:0}
 </style>
 </head>
 <body>
-<div class="topbar"><strong>30 jours d'essai gratuit</strong> pour découvrir PUBLIO<a href="#tarifs">Voir les tarifs →</a></div>
+<div class="topbar"><strong>Bientôt disponible sur iPhone</strong> · 30 jours d'essai gratuit au lancement<a href="#telecharger">Être prévenu(e) →</a></div>
 <header class="nav">
 <div class="wrap">
 <a href="#top" class="brand" aria-label="PUBLIO, retour en haut de page"><img src="logo-stack.webp" alt="PUBLIO" width="74" height="54"></a>
@@ -279,7 +283,7 @@ body{padding-bottom:0}
 <a href="#faq">FAQ</a>
 </nav>
 <div class="nav-right">
-<a href="#telecharger" class="btn btn-grad">Télécharger</a>
+<a href="mailto:publio.app@icloud.com?subject=Me%20pr%C3%A9venir%20du%20lancement%20de%20PUBLIO&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20%C3%AAtre%20pr%C3%A9venu(e)%20du%20lancement%20de%20PUBLIO%20sur%20iPhone.%0D%0A%0D%0AMerci%20!" class="btn btn-grad">Me prévenir</a>
 <button class="burger" type="button" aria-label="Ouvrir le menu" aria-controls="menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </div>
 </div>
@@ -298,14 +302,15 @@ body{padding-bottom:0}
 <span>Rayonnez</span>
 </div>
 <div class="stores" id="hero-stores">
-<!-- TODO : remplacer href="#telecharger" par le lien App Store à la publication -->
-<a class="store" href="#telecharger" aria-label="Télécharger sur l'App Store">
+<!-- TODO : à la publication, remplacer ce bloc « Bientôt » par le lien officiel de l'App Store -->
+<div class="store soon" aria-label="Bientôt disponible sur l'App Store">
 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.42 2.2-1.2 3.05-.84.92-2.2 1.63-3.3 1.54-.13-1.1.42-2.27 1.16-3.06.84-.9 2.29-1.56 3.34-1.53zM20.5 17.3c-.55 1.27-.82 1.84-1.53 2.96-.99 1.57-2.39 3.52-4.12 3.54-1.54.02-1.94-1-4.03-.99-2.09.01-2.53 1.01-4.07.99-1.73-.02-3.05-1.78-4.04-3.35C.05 16.1-.24 11.3 1.47 8.7c1.21-1.85 3.12-2.93 4.92-2.93 1.83 0 2.98 1.01 4.49 1.01 1.47 0 2.36-1.01 4.48-1.01 1.6 0 3.3.87 4.51 2.38-3.96 2.17-3.32 7.83.63 9.15z"/></svg>
-<span><small>Télécharger sur</small><strong>l'App Store</strong></span>
-</a>
+<span><small>Bientôt sur</small><strong>l'App Store</strong></span>
 </div>
-<a class="free" href="#tarifs"><b>30</b><span><strong>jours d'essai gratuit</strong><small>Testez PUBLIO avant de souscrire</small></span></a>
-<p class="note">Disponible pour le moment sur iPhone (iOS). Pensé pour les TPE, indépendants et créateurs.</p>
+<a class="btn btn-grad" href="mailto:publio.app@icloud.com?subject=Me%20pr%C3%A9venir%20du%20lancement%20de%20PUBLIO&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20%C3%AAtre%20pr%C3%A9venu(e)%20du%20lancement%20de%20PUBLIO%20sur%20iPhone.%0D%0A%0D%0AMerci%20!">Me prévenir du lancement</a>
+</div>
+<a class="free" href="#tarifs"><b>30</b><span><strong>jours d'essai gratuit</strong><small>Dès le lancement, testez PUBLIO avant de souscrire</small></span></a>
+<p class="note">Bientôt disponible sur iPhone (iOS). Pensé pour les TPE, indépendants et créateurs.</p>
 </div>
 <div class="phone-stage" aria-hidden="true">
 <div class="phone">
@@ -464,7 +469,7 @@ body{padding-bottom:0}
 <h2>Simple, clair, sans crédits.</h2>
 <p>Vous vous abonnez à un service d'automatisation de votre communication. La seule différence entre les formules : le nombre de marques que vous gérez.</p>
 </div>
-<div class="trial-banner"><strong>30 jours d'essai gratuit</strong><span>sur toutes les formules, pour tester PUBLIO avant de souscrire.</span></div>
+<div class="trial-banner"><strong>30 jours d'essai gratuit</strong><span>sur toutes les formules dès le lancement, pour tester PUBLIO avant de souscrire.</span></div>
 <div class="price-grid">
 <article class="plan">
 <span class="badge">1 marque</span>
@@ -480,7 +485,7 @@ body{padding-bottom:0}
 <li><span>2 à 3 variantes par réseau, prévisualisation et régénération</span></li>
 <li><span>Historique des publications</span></li>
 </ul>
-<a href="#telecharger" class="btn btn-dark">Essayer gratuitement</a>
+<a href="mailto:publio.app@icloud.com?subject=Me%20pr%C3%A9venir%20du%20lancement%20de%20PUBLIO&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20%C3%AAtre%20pr%C3%A9venu(e)%20du%20lancement%20de%20PUBLIO%20sur%20iPhone.%0D%0A%0D%0AMerci%20!" class="btn btn-dark">Me prévenir du lancement</a>
 </article>
 <article class="plan">
 <span class="badge">2 à 5 marques</span>
@@ -494,7 +499,7 @@ body{padding-bottom:0}
 <li><span>Réseaux sociaux et historique propres à chaque marque</span></li>
 <li><span>Toutes les fonctionnalités de PUBLIO SOLO</span></li>
 </ul>
-<a href="#telecharger" class="btn btn-grad">Essayer gratuitement</a>
+<a href="mailto:publio.app@icloud.com?subject=Me%20pr%C3%A9venir%20du%20lancement%20de%20PUBLIO&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20%C3%AAtre%20pr%C3%A9venu(e)%20du%20lancement%20de%20PUBLIO%20sur%20iPhone.%0D%0A%0D%0AMerci%20!" class="btn btn-grad">Me prévenir du lancement</a>
 </article>
 </div>
 <p class="price-note"><b>Pas de crédits à acheter.</b> Vous pouvez passer de SOLO à MULTI à tout moment pour ajouter des marques, jusqu'à 5.</p>
@@ -510,15 +515,16 @@ body{padding-bottom:0}
 <div class="dl-box">
 <span class="big">30 jours d'essai gratuit</span>
 <h2>Prêt à rayonner ?</h2>
-<p>Téléchargez PUBLIO, testez-le gratuitement pendant 30 jours et publiez sur vos réseaux en quelques minutes, où que vous soyez.</p>
+<p>PUBLIO arrive bientôt sur l'App Store. Écrivez-nous pour être prévenu(e) dès le lancement : vous profiterez de 30 jours d'essai gratuit pour publier sur vos réseaux en quelques minutes, où que vous soyez.</p>
 <div class="stores">
-<!-- TODO : remplacer href="#" par le lien officiel de l'App Store -->
-<a class="store" href="#" aria-label="Télécharger sur l'App Store">
+<!-- TODO : à la publication, remplacer ce bloc « Bientôt » par le lien officiel de l'App Store -->
+<div class="store soon" aria-label="Bientôt disponible sur l'App Store">
 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.42 2.2-1.2 3.05-.84.92-2.2 1.63-3.3 1.54-.13-1.1.42-2.27 1.16-3.06.84-.9 2.29-1.56 3.34-1.53zM20.5 17.3c-.55 1.27-.82 1.84-1.53 2.96-.99 1.57-2.39 3.52-4.12 3.54-1.54.02-1.94-1-4.03-.99-2.09.01-2.53 1.01-4.07.99-1.73-.02-3.05-1.78-4.04-3.35C.05 16.1-.24 11.3 1.47 8.7c1.21-1.85 3.12-2.93 4.92-2.93 1.83 0 2.98 1.01 4.49 1.01 1.47 0 2.36-1.01 4.48-1.01 1.6 0 3.3.87 4.51 2.38-3.96 2.17-3.32 7.83.63 9.15z"/></svg>
-<span><small>Télécharger sur</small><strong>l'App Store</strong></span>
-</a>
+<span><small>Bientôt sur</small><strong>l'App Store</strong></span>
 </div>
-<p class="fine">Disponible pour le moment sur iPhone (iOS).</p>
+<a class="btn btn-dark" href="mailto:publio.app@icloud.com?subject=Me%20pr%C3%A9venir%20du%20lancement%20de%20PUBLIO&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20%C3%AAtre%20pr%C3%A9venu(e)%20du%20lancement%20de%20PUBLIO%20sur%20iPhone.%0D%0A%0D%0AMerci%20!">Me prévenir du lancement</a>
+</div>
+<p class="fine">Bientôt disponible sur iPhone (iOS).</p>
 </div>
 </div>
 </section>
@@ -536,7 +542,7 @@ body{padding-bottom:0}
 </details>
 <details>
 <summary>Sur quels appareils PUBLIO est-il disponible ?</summary>
-<p>Pour le moment, PUBLIO est disponible sur iPhone (iOS), en téléchargement sur l'App Store.</p>
+<p>PUBLIO sera disponible en premier sur iPhone (iOS), en téléchargement sur l'App Store. Le lancement est en préparation : écrivez-nous à publio.app@icloud.com pour être prévenu(e).</p>
 </details>
 <details>
 <summary>Dois-je obligatoirement fournir une photo ?</summary>
@@ -556,7 +562,7 @@ body{padding-bottom:0}
 </details>
 <details>
 <summary>Comment fonctionne l'essai gratuit ?</summary>
-<p>Vous testez PUBLIO gratuitement pendant 30 jours. À l'issue de l'essai, vous souscrivez à la formule PUBLIO SOLO ou PUBLIO MULTI, en paiement mensuel ou annuel.</p>
+<p>Dès le lancement, vous testez PUBLIO gratuitement pendant 30 jours. À l'issue de l'essai, vous souscrivez à la formule PUBLIO SOLO ou PUBLIO MULTI, en paiement mensuel ou annuel.</p>
 </details>
 <details>
 <summary>Faut-il acheter des crédits de création ?</summary>
@@ -579,7 +585,7 @@ body{padding-bottom:0}
 <a href="#reseaux">Réseaux</a>
 <a href="#tarifs">Tarifs</a>
 <a href="#faq">FAQ</a>
-<a href="#telecharger">Télécharger</a>
+<a href="#telecharger">Être prévenu(e)</a>
 <a href="mailto:publio.app@icloud.com">Contact</a>
 </nav>
 </div>
@@ -589,7 +595,7 @@ body{padding-bottom:0}
 </div>
 </div>
 </footer>
-<a class="stickybar hide" href="#telecharger" aria-label="Télécharger PUBLIO"><span><strong>30 jours gratuits</strong><small>Testez PUBLIO sur iPhone</small></span><span class="btn btn-grad">Télécharger</span></a>
+<a class="stickybar hide" href="mailto:publio.app@icloud.com?subject=Me%20pr%C3%A9venir%20du%20lancement%20de%20PUBLIO&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20%C3%AAtre%20pr%C3%A9venu(e)%20du%20lancement%20de%20PUBLIO%20sur%20iPhone.%0D%0A%0D%0AMerci%20!" aria-label="Être prévenu(e) du lancement de PUBLIO"><span><strong>Bientôt sur iPhone</strong><small>30 jours gratuits au lancement</small></span><span class="btn btn-grad">Me prévenir</span></a>
 <script>
 (function(){
 var h=document.querySelector('header.nav'),b=document.querySelector('.burger');

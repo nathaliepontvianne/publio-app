@@ -142,7 +142,7 @@ radial-gradient(50% 50% at 8% 30%,rgba(59,130,246,.13),transparent 70%),#fff;ove
 .chip{padding:11px 22px;border-radius:999px;border:1px solid var(--line);background:#fff;font-weight:500;font-size:.98rem}
 .trial-banner{max-width:900px;margin:0 auto 34px;display:flex;align-items:center;justify-content:center;gap:6px 14px;flex-wrap:wrap;padding:18px 24px;border-radius:20px;background:var(--grad-diag);color:#fff;text-align:center;font-size:1.05rem;box-shadow:0 20px 40px -24px rgba(139,92,246,.7)}
 .trial-banner strong{font-family:'Poppins',sans-serif;font-weight:800;font-size:1.35rem}
-.price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:900px;margin-inline:auto}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin-inline:auto}
 .plan{position:relative;border:2px solid transparent;border-radius:28px;padding:42px 34px 34px;background:linear-gradient(#fff,#fff) padding-box,var(--grad-diag) border-box;box-shadow:0 30px 60px -38px rgba(139,92,246,.5);display:flex;flex-direction:column}
 .plan .badge{position:absolute;top:-15px;right:30px;background:var(--grad);color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.04em;padding:7px 16px;border-radius:999px}
 .plan h3{font-size:1.5rem;font-weight:800;letter-spacing:-.01em}
@@ -202,6 +202,7 @@ footer .bottom{padding-top:26px;font-size:.85rem;color:#94A3B8;display:flex;flex
 .hero .wrap{grid-template-columns:1fr;gap:48px}
 .grid3,.var-grid{grid-template-columns:1fr 1fr}
 .steps{grid-template-columns:1fr 1fr}
+.price-grid{grid-template-columns:1fr;max-width:520px}
 }
 @media (max-width:720px){
 section{padding:60px 0}
@@ -467,7 +468,7 @@ body{padding-bottom:0}
 <div class="section-head center" style="text-align:center">
 <span class="eyebrow">Tarifs</span>
 <h2>Simple, clair, sans crédits.</h2>
-<p>Vous vous abonnez à un service d'automatisation de votre communication. La seule différence entre les formules : le nombre de marques que vous gérez.</p>
+<p>Vous vous abonnez à un service d'automatisation de votre communication. Le nombre de marques que vous gérez et l'accès aux statistiques de performance font la différence entre les formules.</p>
 </div>
 <div class="trial-banner"><strong>30 jours d'essai gratuit</strong><span>sur toutes les formules dès le lancement, pour tester PUBLIO avant de souscrire.</span></div>
 <div class="price-grid">
@@ -502,8 +503,23 @@ body{padding-bottom:0}
 </ul>
 <a href="mailto:publio.app@icloud.com?subject=Me%20pr%C3%A9venir%20du%20lancement%20de%20PUBLIO&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20%C3%AAtre%20pr%C3%A9venu(e)%20du%20lancement%20de%20PUBLIO%20sur%20iPhone.%0D%0A%0D%0AMerci%20!" class="btn btn-grad">Me prévenir du lancement</a>
 </article>
+<article class="plan">
+<span class="badge">1 à 5 marques</span>
+<div class="plan-head"><h3 class="plan-name">PRO</h3><p class="who">Pour piloter votre communication à la performance.</p></div>
+<div class="amount">59,99&nbsp;€ <small>/ mois</small></div>
+<p class="yearly">ou <b>599&nbsp;€ / an</b> · environ 2 mois offerts</p>
+<span class="trial">30 jours d'essai gratuit</span>
+<ul>
+<li><span><b>1 à 5 marques</b>, chacune avec son profil business</span></li>
+<li><span><b>Publications illimitées</b>, sans compteur ni crédits</span></li>
+<li><span>Toutes les fonctionnalités de PUBLIO SOLO et MULTI</span></li>
+<li><span>Statistiques de performance par réseau et par publication</span></li>
+<li><span>Conseils personnalisés basés sur vos statistiques de publication</span></li>
+</ul>
+<a href="mailto:publio.app@icloud.com?subject=Me%20pr%C3%A9venir%20du%20lancement%20de%20PUBLIO&amp;body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20%C3%AAtre%20pr%C3%A9venu(e)%20du%20lancement%20de%20PUBLIO%20sur%20iPhone.%0D%0A%0D%0AMerci%20!" class="btn btn-grad">Me prévenir du lancement</a>
+</article>
 </div>
-<p class="price-note"><b>Pas de crédits à acheter.</b> Vous pouvez passer de SOLO à MULTI à tout moment pour ajouter des marques, jusqu'à 5.</p>
+<p class="price-note"><b>Pas de crédits à acheter.</b> Vous pouvez changer de formule à tout moment : ajouter des marques jusqu'à 5, ou passer à PRO pour les statistiques et les conseils personnalisés.</p>
 <div class="quote">
 <p>Plus de 5 marques ?<span>Nous contacter pour un devis sur mesure : <a href="mailto:publio.app@icloud.com" style="text-decoration:underline">publio.app@icloud.com</a></span></p>
 <a href="mailto:publio.app@icloud.com?subject=Demande%20de%20devis%20PUBLIO%20-%20plus%20de%205%20marques" class="btn btn-ghost">Nous contacter</a>
@@ -559,11 +575,15 @@ body{padding-bottom:0}
 </details>
 <details>
 <summary>Puis-je gérer plusieurs marques ?</summary>
-<p>Oui. La formule PUBLIO MULTI permet de gérer de 2 à 5 marques, chacune avec son propre profil business, ses réseaux et son historique. PUBLIO SOLO est conçue pour une seule marque. Au-delà de 5 marques, contactez-nous à publio.app@icloud.com pour un devis.</p>
+<p>Oui. Les formules PUBLIO MULTI et PUBLIO PRO permettent de gérer de 2 à 5 marques, chacune avec son propre profil business, ses réseaux et son historique. PUBLIO SOLO est conçue pour une seule marque. Au-delà de 5 marques, contactez-nous à publio.app@icloud.com pour un devis.</p>
+</details>
+<details>
+<summary>Que contient la formule PRO ?</summary>
+<p>PUBLIO PRO inclut tout ce que proposent SOLO et MULTI, avec en plus des statistiques de performance par réseau et par publication, et des conseils personnalisés pour ajuster votre communication selon ce qui fonctionne le mieux auprès de votre audience.</p>
 </details>
 <details>
 <summary>Comment fonctionne l'essai gratuit ?</summary>
-<p>Dès le lancement, vous testez PUBLIO gratuitement pendant 30 jours. À l'issue de l'essai, vous souscrivez à la formule PUBLIO SOLO ou PUBLIO MULTI, en paiement mensuel ou annuel.</p>
+<p>Dès le lancement, vous testez PUBLIO gratuitement pendant 30 jours. À l'issue de l'essai, vous souscrivez à la formule PUBLIO SOLO, MULTI ou PRO, en paiement mensuel ou annuel.</p>
 </details>
 <details>
 <summary>Faut-il acheter des crédits de création ?</summary>
